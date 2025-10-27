@@ -64,9 +64,9 @@ if __name__ == '__main__':
 
     # Test class TaskSchedule
     s = TaskScheduler()
-    s.add_task("t1", f1)
-    s.add_task("t2", f2)
-    s.add_task("t3", f3)
-    print(s.get_results())
-    s.run_all()
-    print(s.get_results())
+    s.add_task("t1", f1)  # thêm task t1 chạy f1
+    s.add_task("t2", f2)  # thêm task t2 chạy f2
+    s.add_task("t3", f3)  # thêm task t3 chạy f3
+
+    s.run_all()  # chạy tất cả task
+    print(s.get_results())  # in kết quả
